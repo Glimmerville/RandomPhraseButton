@@ -45,14 +45,14 @@ function randomFactButton() {
     var newFact = document.getElementById('factlet');
     //so what if we want it to NOT use the same quote 2x in a row?
     var currentQuote = newFact.innerHTML;
-    //do {
+    do {
     var Rand = Math.floor(Math.random() * lotsOfRand);
-
-    //}
-    //while (newFact == currentQuote);
+        
+    }
+    while (newFact !== currentQuote);
 
         newFact.innerHTML = facts[Rand];
-
+    //did not finish making this work (random no repeat)
 }
 
 

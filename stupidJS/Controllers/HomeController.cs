@@ -32,5 +32,11 @@ namespace stupidJS.Controllers
 
             return View();
         }
+        public ActionResult MoreDOM()
+        {
+            ViewBag.Message = "MoreDOM.";
+
+            return View();
+        }
     }
 }
